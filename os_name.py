@@ -8,6 +8,5 @@ if answer == 'yes':
     print('Your computer\'s name is: ', name)
 elif answer == 'no':
     print('Well, maybe some other time than.')
-
 else:
     print('That is not a valid option.')
