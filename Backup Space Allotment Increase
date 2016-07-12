@@ -1,6 +1,6 @@
 a = .10
 
-b = int(input('How much space is available? '))
+b = float(input('How much space is available? '))
 
 n = (a * b)
 
