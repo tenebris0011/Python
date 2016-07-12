@@ -1,0 +1,9 @@
+a = .10
+
+b = int(input('How much space is available? '))
+
+n = (a * b)
+
+answer = (b + n)
+
+print (answer)
