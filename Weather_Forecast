@@ -1,4 +1,3 @@
-from urllib.request import urlopen
 import urllib.request
 import json
 r = urllib.request.urlopen('http://api.wunderground.com/api/ed5d4893ed2444ac/forecast/q/OK/Oklahoma_City.json')
