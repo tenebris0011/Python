@@ -1,7 +1,12 @@
 import urllib.request
 import json
-r = urllib.request.urlopen('http://api.wunderground.com/api/ed5d4893ed2444ac/forecast/q/OK/Oklahoma_City.json')
+
+api_key = 'ed5d4893ed2444ac'
+url = 'http://api.wunderground.com/api/+api_key/forecast/q/OK/Oklahoma_City.json'
+
+r = urllib.request.urlopen(url).read().decode('UTF-8')
 
 data = r.json()
 
-print (data['forecast']['simpleforecast'])
+print (data['forecast'])
+
