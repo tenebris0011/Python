@@ -1,6 +1,12 @@
 from urllib.request import urlopen
 import json
-f = urlopen('http://api.wunderground.com/api/ed5d4893ed2444ac/conditions/q/OK/Oklahoma_City.json')
+
+u = input('What is the initals of the state you are in? ex. OK: ')
+u2 = input('What is the Zip cord for the city?: ' )
+
+api = 'ed5d4893ed2444ac' # You will need to replace this with your own API Key.
+
+f = urlopen('http://api.wunderground.com/api/' + api + '/conditions/q/'+ u + '/' + u2 + '.json')
 json_string = f.read().decode('utf-8')
 
 parsed_json = json.loads(json_string)
@@ -11,6 +17,8 @@ temp_f = parsed_json['current_observation']['temp_f']
 
 weather = parsed_json['current_observation']['weather']
 
+print ("======================================================")
 print ("Current temperature in %s is: %s" % (location, temp_f,))
-print ("The current weather conditions are %s" % (weather))
+print ("The current weather conditions are %s." % (weather))
+print ("======================================================")
 f.close()
