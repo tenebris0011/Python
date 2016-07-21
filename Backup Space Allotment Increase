@@ -1,6 +1,6 @@
-a = .10
+a = .10 # Modify this for the percentage you want to use.
 
-b = float(input('How much space is available? '))
+b = float(input('How much space is available? ')) # This requires a float, so that it accepts decimals
 
 n = (a * b)
 
