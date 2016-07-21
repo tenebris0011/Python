@@ -1,8 +1,11 @@
 import urllib.request
 import json
 
-api_key = 'ed5d4893ed2444ac'
-url = 'http://api.wunderground.com/api/' + api_key + '/forecast/q/OK/Oklahoma_City.json'
+u = input ('What is the initals of the state you are in? ex. OK: ')
+u2 = input('What is the Zip code for the city?: ' )
+
+api = 'ed5d4893ed2444ac' # You will need to replace this with your own API Key.
+url = 'http://api.wunderground.com/api/' + api + '/forecast/q/' + u + '/' + u2 +'.json'
 
 r = urllib.request.urlopen(url)
 json_string = r.read().decode('UTF-8')
