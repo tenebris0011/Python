@@ -7,3 +7,4 @@ Though as I learn, I plan on writing usefuly scripts.
 # Websites I am using
 - [After Hours Programming] (http://www.afterhoursprogramming.com/)
 - [Invent with Python] (https://inventwithpython.com/chapters/)
+- [The Hitchhikers Guide to Python!] (http://docs.python-guide.org/en/latest/)
