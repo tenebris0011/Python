@@ -1,8 +1,8 @@
 # Python
-I will be building this repository as I learn python.  
-Any scripts that I write will be stored here.
-In the beginning, many scripts that are written, will no be useful.   
-Though as I learn, I plan on writing usefuly scripts.
+A repository that consits of code that I have written on my journey of learning python.  
+Feel free to sumbit issues if you have any suggestions, or submit a pull request.  
+A lot of this code won't be of much use, it will just be simple "Look what I learened".  
+As I learn I plan on expaning my portfolio, if you have any suggestions on sites to learn from drop me a line.  
 
 # Websites I am using
 - [After Hours Programming] (http://www.afterhoursprogramming.com/)
