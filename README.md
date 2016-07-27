@@ -8,3 +8,4 @@ As I learn I plan on expaning my portfolio, if you have any suggestions on sites
 - [After Hours Programming] (http://www.afterhoursprogramming.com/)
 - [Invent with Python] (https://inventwithpython.com/chapters/)
 - [The Hitchhikers Guide to Python!] (http://docs.python-guide.org/en/latest/)
+- [Learn Python the Hard Way!] (http://learnpythonthehardway.org/book/index.html)
