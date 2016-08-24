@@ -1,0 +1,15 @@
+def calculateSalesTax(price):
+	sales_tax = .08
+	return price * sales_tax
+
+def displayTotals(price):
+	print('Original Price', price)
+	sales_tax = calculateSalesTax(price)
+	print('Sales Tax', sales_tax)
+	print('Total', "%.2f" % (price + sales_tax))
+	
+def main():
+	price = float(input('Enter the price of the purchase: '))
+	displayTotals(price)
+	
+main()
