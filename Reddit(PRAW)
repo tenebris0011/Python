@@ -1,0 +1,21 @@
+import time
+import praw
+
+r = praw.Reddit('Submission variables test by /u/aeternum123')
+r.login()
+already_done = []
+submission = r.get_submission(submission_id = "105aru")
+#print(vars(submission))
+
+eslWords = ['ESL','New York','NaVi','VP','Finals']
+
+while True:
+	subreddit = r.get_subreddit('globaloffensive')
+	for submission in subreddit.get_hot(limit=20):
+		op_text = submission.selftext.lower()
+		has_esl = any(string in op_text for string in eslWords)
+		if submission.id not in already_done and has_esl:
+			masg = '[ESL related thread](%s)' % submission.short_link
+			r.send_message('Aeternum123', 'ESL Thread', msg)
+			already_done.append(submission.id)
+time.sleep(1800)
