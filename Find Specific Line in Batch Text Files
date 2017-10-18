@@ -1,0 +1,12 @@
+#user_input = input("What are you searching for?" )  # Working on allowing user to search for what they want, without having to modify code.
+import glob # Glob module files all the pathnames matching a specified pattern.
+path = "*.txt" # Need to have \\ in order to not get a unicode error.
+for filename in glob.glob(path):
+    with open(filename, 'r') as f:
+        for line in f:
+            if "Nmap" in line: # Change this to whatever you want to find.
+                print (line)
+            if "IP" in line: # Change this to whatever you want to find.
+                print (line)
+            if "ip" in line: # Change this to whatever you want to find.
+                print (line)
